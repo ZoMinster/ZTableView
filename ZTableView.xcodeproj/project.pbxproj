@@ -20,6 +20,8 @@
 		862C34D52BFA537600A353E5 /* ZTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34D42BFA537600A353E5 /* ZTableViewDemoTests.swift */; };
 		862C34DF2BFA537600A353E5 /* ZTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34DE2BFA537600A353E5 /* ZTableViewDemoUITests.swift */; };
 		862C34E12BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34E02BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift */; };
+		862C34F02BFA551100A353E5 /* ZTableViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */; };
+		862C34F22BFA552100A353E5 /* ZTableViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34F12BFA552100A353E5 /* ZTableViewSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		862C34DA2BFA537600A353E5 /* ZTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		862C34DE2BFA537600A353E5 /* ZTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITests.swift; sourceTree = "<group>"; };
 		862C34E02BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewNode.swift; sourceTree = "<group>"; };
+		862C34F12BFA552100A353E5 /* ZTableViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,9 +114,8 @@
 		862C34932BF6658300A353E5 = {
 			isa = PBXGroup;
 			children = (
-				862C34A02BF6658300A353E5 /* ZTableView.h */,
-				862C34A12BF6658300A353E5 /* ZTableView.docc */,
-				862C34B72BF666BB00A353E5 /* ZTableViewCell */,
+				862C34EC2BFA545000A353E5 /* View */,
+				862C34EB2BFA543E00A353E5 /* Model */,
 				862C349F2BF6658300A353E5 /* ZTableView */,
 				862C34AB2BF6658400A353E5 /* ZTableViewTests */,
 				862C34C12BFA537300A353E5 /* ZTableViewDemo */,
@@ -137,7 +140,8 @@
 		862C349F2BF6658300A353E5 /* ZTableView */ = {
 			isa = PBXGroup;
 			children = (
-				862C34BA2BFA532E00A353E5 /* ZTableView.swift */,
+				862C34A02BF6658300A353E5 /* ZTableView.h */,
+				862C34A12BF6658300A353E5 /* ZTableView.docc */,
 			);
 			path = ZTableView;
 			sourceTree = "<group>";
@@ -148,14 +152,6 @@
 				862C34AC2BF6658400A353E5 /* ZTableViewTests.swift */,
 			);
 			path = ZTableViewTests;
-			sourceTree = "<group>";
-		};
-		862C34B72BF666BB00A353E5 /* ZTableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				862C34B82BFA531A00A353E5 /* ZTableViewCell.swift */,
-			);
-			path = ZTableViewCell;
 			sourceTree = "<group>";
 		};
 		862C34C12BFA537300A353E5 /* ZTableViewDemo */ = {
@@ -193,6 +189,24 @@
 				862C34E02BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift */,
 			);
 			path = ZTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		862C34EB2BFA543E00A353E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */,
+				862C34F12BFA552100A353E5 /* ZTableViewSection.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		862C34EC2BFA545000A353E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				862C34B82BFA531A00A353E5 /* ZTableViewCell.swift */,
+				862C34BA2BFA532E00A353E5 /* ZTableView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +410,8 @@
 			files = (
 				862C34BB2BFA532E00A353E5 /* ZTableView.swift in Sources */,
 				862C34B92BFA531A00A353E5 /* ZTableViewCell.swift in Sources */,
+				862C34F02BFA551100A353E5 /* ZTableViewNode.swift in Sources */,
+				862C34F22BFA552100A353E5 /* ZTableViewSection.swift in Sources */,
 				862C34A22BF6658300A353E5 /* ZTableView.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
