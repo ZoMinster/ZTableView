@@ -9,10 +9,11 @@ import UIKit
 
 public protocol ZTableViewNodeProtocol {
     var title: String {get set}
-    var isSection: Bool {get set}
+    var isRoot: Bool {get set}
     var expanded: Bool {get set}
     var index: Int {get set}
     var depth: Int {get set}
     var indexPath: IndexPath {get set}
     var children: [ZTableViewNodeProtocol] {get set}
+    var parent: ZTableViewNodeProtocol? {get set}
 }

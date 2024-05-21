@@ -15,6 +15,7 @@ internal class ZTableViewController: ZTableViewDelegate {
         didSet {
             if let tv = tableView {
                 if isFirstSetData {
+                    
                     tv.reloadData()
                     isFirstSetData = false
                 }
@@ -25,7 +26,59 @@ internal class ZTableViewController: ZTableViewDelegate {
     var lastDatas: [ZTableViewNodeProtocol] = []
     var showingDatas: [ZTableViewNodeProtocol] = []
     
-    
+    func solveDatas() {
+        showingDatas = []
+        if datas.isEmpty {
+            return
+        }
+        var zdatas: [ZTableViewNodeProtocol] = []
+        zdatas += datas
+        var hasParent = false
+        var firstLevelIndex = 0
+        while(!zdatas.isEmpty) {
+            var node = zdatas.first!
+            zdatas.removeFirst()
+            if node.parent == nil {
+                node.depth = 0
+            } else {
+                node.depth = node.parent!.depth + 1
+                if !hasParent {
+                    hasParent = true
+                }
+                node.parent = nil
+            }
+            if !hasParent {
+                node.index = firstLevelIndex
+                firstLevelIndex += 1
+            }
+            
+            if node.children.isEmpty {
+                continue
+            }
+            var index = 0
+            for var subNode in node.children {
+                subNode.index = index
+                index += 1
+                subNode.parent = node
+                zdatas.append(subNode)
+            }
+        }
+        zdatas += datas
+        while(!zdatas.isEmpty){
+            var node = zdatas.first!
+            zdatas.removeFirst()
+            showingDatas.append(node)
+            if node.children.isEmpty || !node.expanded {
+                continue
+            }
+            var children = node.children.reversed()
+            for subNode in children {
+                zdatas.insert(subNode, at: 0)
+            }
+        }
+        
+        
+    }
     
     func tableView(_ tableView: UITableView, performDropWith coordinator: any UITableViewDropCoordinator) {
         <#code#>

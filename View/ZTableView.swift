@@ -16,6 +16,11 @@ open class ZTableView: UITableView, UITableViewDelegate {
     }
     open var expansionAnimation: UITableView.RowAnimation = .top
     open var expansionType: ZTableViewExpansionType = .multiple
+    open var datas: [ZTableViewNodeProtocol] = [] {
+        didSet {
+            controller.datas = datas
+        }
+    }
     open var autoSolveDataSource: Bool = true
     open weak var zDelegate: ZTableViewDelegate? {
         didSet {
