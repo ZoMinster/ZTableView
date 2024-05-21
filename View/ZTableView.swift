@@ -7,14 +7,27 @@
 
 import UIKit
 
-class ZTableView: UITableView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+
+open class ZTableView: UITableView, UITableViewDelegate {
+    public enum ZTableViewExpansionType {
+        case multiple
+        case single
     }
-    */
+    open var expansionAnimation: UITableView.RowAnimation = .top
+    open var expansionType: ZTableViewExpansionType = .multiple
+    open var autoSolveDataSource: Bool = true
+    open weak var zDelegate: ZTableViewDelegate? {
+        didSet {
+            controller.delegate = self.zDelegate
+            controller.tableView = self
+            self.delegate = controller
+            self.dataSource = controller
+            self.dragDelegate = controller
+            self.dropDelegate = controller
+        }
+    }
+    
+    internal var controller: ZTableViewController = ZTableViewController()
 
 }
