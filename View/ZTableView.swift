@@ -25,7 +25,6 @@ open class ZTableView: UITableView, UITableViewDelegate {
     open weak var zDelegate: ZTableViewDelegate? {
         didSet {
             controller.delegate = self.zDelegate
-            controller.tableView = self
             self.delegate = controller
             self.dataSource = controller
             self.dragDelegate = controller
@@ -34,5 +33,13 @@ open class ZTableView: UITableView, UITableViewDelegate {
     }
     
     internal var controller: ZTableViewController = ZTableViewController()
-
+    override public init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+        controller.tableView = self
+        self.register(ZTableViewCell.self, forCellReuseIdentifier: zCellID)
+    }
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        controller.tableView = self
+    }
 }
