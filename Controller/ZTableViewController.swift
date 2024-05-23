@@ -9,7 +9,9 @@ import UIKit
 
 internal let zCellID = "z.cell.id.default"
 
-internal class ZTableViewController: ZTableViewDelegate {
+
+internal class ZTableViewController: NSObject, ZTableViewDelegate {
+    
     weak var delegate: ZTableViewDelegate?
     weak var tableView: ZTableView?
     var hasSectionHeader: Bool = false
@@ -717,60 +719,126 @@ internal class ZTableViewController: ZTableViewDelegate {
         delegate?.tableView?(tableView, willEndContextMenuInteraction: configuration, animator: animator)
     }
     
-    
-    func tableView(_ tableView: UITableView, performDropWith coordinator: any UITableViewDropCoordinator) {
-        <#code#>
+    // Provide items to begin a drag associated with a given index path.
+    // You can use -[session locationInView:] to do additional hit testing if desired.
+    // If an empty array is returned a drag session will not begin.
+    @available(iOS 11.0, *)
+    internal func tableView(_ tableView: UITableView, itemsForBeginning session: any UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        guard let items = delegate?.tableView?(tableView, itemsForBeginning: session, at: indexPath) else {
+            return []
+        }
+        return items
     }
     
-    func tableView(_ tableView: UITableView, itemsForBeginning session: any UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
-        <#code#>
+    
+    // Called to request items to add to an existing drag session in response to the add item gesture.
+    // You can use the provided point (in the table view's coordinate space) to do additional hit testing if desired.
+    // If not implemented, or if an empty array is returned, no items will be added to the drag and the gesture
+    // will be handled normally.
+    internal func tableView(_ tableView: UITableView, itemsForAddingTo session: any UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
+        guard let items = delegate?.tableView?(tableView, itemsForAddingTo: session, at: indexPath, point: point) else {
+            return []
+        }
+        return items
     }
     
-    func isEqual(_ object: Any?) -> Bool {
-        <#code#>
+    
+    // Allows customization of the preview used for the row when it is lifted or if the drag cancels.
+    // If not implemented or if nil is returned, the entire cell will be used for the preview.
+    internal func tableView(_ tableView: UITableView, dragPreviewParametersForRowAt indexPath: IndexPath) -> UIDragPreviewParameters? {
+        return delegate?.tableView?(tableView, dragPreviewParametersForRowAt: indexPath)
     }
     
-    var hash: Int = 0
     
-    var superclass: AnyClass?
-    
-    func `self`() -> Self {
-        <#code#>
+    // Called after the lift animation has completed to signal the start of a drag session.
+    // This call will always be balanced with a corresponding call to -tableView:dragSessionDidEnd:
+    internal func tableView(_ tableView: UITableView, dragSessionWillBegin session: any UIDragSession) {
+        delegate?.tableView?(tableView, dragSessionWillBegin: session)
     }
     
-    func perform(_ aSelector: Selector!) -> Unmanaged<AnyObject>! {
-        <#code#>
+    
+    // Called to signal the end of the drag session.
+    internal func tableView(_ tableView: UITableView, dragSessionDidEnd session: any UIDragSession) {
+        delegate?.tableView?(tableView, dragSessionDidEnd: session)
     }
     
-    func perform(_ aSelector: Selector!, with object: Any!) -> Unmanaged<AnyObject>! {
-        <#code#>
+    
+    // Controls whether move operations are allowed for the drag session.
+    // If not implemented, defaults to YES.
+    internal func tableView(_ tableView: UITableView, dragSessionAllowsMoveOperation session: any UIDragSession) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, dragSessionAllowsMoveOperation: session) else {
+            return true
+        }
+        return flag
     }
     
-    func perform(_ aSelector: Selector!, with object1: Any!, with object2: Any!) -> Unmanaged<AnyObject>! {
-        <#code#>
+    
+    // Controls whether the drag session is restricted to the source application.
+    // If not implemented, defaults to NO.
+    internal func tableView(_ tableView: UITableView, dragSessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, dragSessionIsRestrictedToDraggingApplication: session) else {
+            return false
+        }
+        return flag
     }
     
-    func isProxy() -> Bool {
-        <#code#>
+    // Called when the user initiates the drop.
+    // Use the drop coordinator to access the items in the drop and the final destination index path and proposal for the drop,
+    // as well as specify how you wish to animate each item to its final position.
+    // If your implementation of this method does nothing, default drop animations will be supplied and the table view will
+    // revert back to its initial state before the drop session entered.
+    internal func tableView(_ tableView: UITableView, performDropWith coordinator: any UITableViewDropCoordinator) {
+        delegate?.tableView?(tableView, performDropWith: coordinator)
     }
     
-    func isKind(of aClass: AnyClass) -> Bool {
-        <#code#>
+    
+    // If NO is returned no further delegate methods will be called for this drop session.
+    // If not implemented, a default value of YES is assumed.
+    internal func tableView(_ tableView: UITableView, canHandle session: any UIDropSession) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, canHandle: session) else {
+            return false
+        }
+        return flag
     }
     
-    func isMember(of aClass: AnyClass) -> Bool {
-        <#code#>
+    
+    // Called when the drop session begins tracking in the table view's coordinate space.
+    internal func tableView(_ tableView: UITableView, dropSessionDidEnter session: any UIDropSession) {
+        delegate?.tableView?(tableView, dropSessionDidEnter: session)
     }
     
-    func conforms(to aProtocol: Protocol) -> Bool {
-        <#code#>
+    
+    // Called frequently while the drop session being tracked inside the table view's coordinate space.
+    // When the drop is at the end of a section, the destination index path passed will be for a row that does not yet exist (equal
+    // to the number of rows in that section), where an inserted row would append to the end of the section.
+    // The destination index path may be nil in some circumstances (e.g. when dragging over empty space where there are no cells).
+    // Note that in some cases your proposal may not be allowed and the system will enforce a different proposal.
+    // You may perform your own hit testing via -[session locationInView:]
+    internal func tableView(_ tableView: UITableView, dropSessionDidUpdate session: any UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UITableViewDropProposal {
+        guard let proposal = delegate?.tableView?(tableView, dropSessionDidUpdate: session, withDestinationIndexPath: destinationIndexPath) else {
+            return UITableViewDropProposal(operation: .cancel)
+        }
+        return proposal
     }
     
-    func responds(to aSelector: Selector!) -> Bool {
-        <#code#>
+    
+    // Called when the drop session is no longer being tracked inside the table view's coordinate space.
+    internal func tableView(_ tableView: UITableView, dropSessionDidExit session: any UIDropSession) {
+        delegate?.tableView?(tableView, dropSessionDidExit: session)
     }
     
-    var description: String = ""
+    
+    // Called when the drop session completed, regardless of outcome. Useful for performing any cleanup.
+    internal func tableView(_ tableView: UITableView, dropSessionDidEnd session: any UIDropSession) {
+        delegate?.tableView?(tableView, dropSessionDidEnd: session)
+    }
+    
+    
+    // Allows customization of the preview used when dropping to a newly inserted row.
+    // If not implemented or if nil is returned, the entire cell will be used for the preview.
+    internal func tableView(_ tableView: UITableView, dropPreviewParametersForRowAt indexPath: IndexPath) -> UIDragPreviewParameters? {
+        return delegate?.tableView?(tableView, dropPreviewParametersForRowAt: indexPath)
+    }
     
     
 }
