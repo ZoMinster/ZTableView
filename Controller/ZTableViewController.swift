@@ -520,60 +520,126 @@ internal class ZTableViewController: ZTableViewDelegate {
     }
 
     @available(iOS 11.0, *)
-    internal func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+    internal func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        return delegate?.tableView?(tableView, trailingSwipeActionsConfigurationForRowAt: indexPath)
+    }
 
     @available(iOS 8.0, *)
-    internal func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool
+    internal func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, shouldIndentWhileEditingRowAt: indexPath) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS 8.0, *)
-    internal func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath)
+    internal func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+        delegate?.tableView?(tableView, willBeginEditingRowAt: indexPath)
+    }
 
     @available(iOS 8.0, *)
-    internal func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?)
+    internal func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+        delegate?.tableView?(tableView, didEndEditingRowAt: indexPath)
+    }
 
     @available(iOS 8.0, *)
-    internal func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath
+    internal func tableView(_ tableView: UITableView, targetIndexPathForMoveFromRowAt sourceIndexPath: IndexPath, toProposedIndexPath proposedDestinationIndexPath: IndexPath) -> IndexPath {
+        guard let indexPath = delegate?.tableView?(tableView, targetIndexPathForMoveFromRowAt: sourceIndexPath, toProposedIndexPath: proposedDestinationIndexPath) else {
+            return IndexPath()
+        }
+        return indexPath
+    }
 
     @available(iOS 8.0, *)
-    internal func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int
+    internal func tableView(_ tableView: UITableView, indentationLevelForRowAt indexPath: IndexPath) -> Int {
+        guard let indentationLevel = delegate?.tableView?(tableView, indentationLevelForRowAt: indexPath) else {
+            return 0
+        }
+        return indentationLevel
+    }
 
     @available(iOS, introduced: 5.0, deprecated: 13.0)
-    internal func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool
+    internal func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, shouldShowMenuForRowAt: indexPath) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS, introduced: 5.0, deprecated: 13.0)
-    internal func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool
+    internal func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, canPerformAction: action, forRowAt: indexPath, withSender: sender) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS, introduced: 5.0, deprecated: 13.0)
-    internal func tableView(_ tableView: UITableView, performAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?)
+    internal func tableView(_ tableView: UITableView, performAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) {
+        delegate?.tableView?(tableView, performAction: action, forRowAt: indexPath, withSender: sender)
+    }
 
     @available(iOS 9.0, *)
-    internal func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool
+    internal func tableView(_ tableView: UITableView, canFocusRowAt indexPath: IndexPath) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, canFocusRowAt: indexPath) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS 9.0, *)
-    internal func tableView(_ tableView: UITableView, shouldUpdateFocusIn context: UITableViewFocusUpdateContext) -> Bool
+    internal func tableView(_ tableView: UITableView, shouldUpdateFocusIn context: UITableViewFocusUpdateContext) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, shouldUpdateFocusIn: context) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS 9.0, *)
-    internal func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
+    internal func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        delegate?.tableView?(tableView, didUpdateFocusIn: context, with: coordinator)
+    }
 
     @available(iOS 9.0, *)
-    internal func indexPathForPreferredFocusedView(in tableView: UITableView) -> IndexPath?
+    internal func indexPathForPreferredFocusedView(in tableView: UITableView) -> IndexPath? {
+        return delegate?.indexPathForPreferredFocusedView?(in: tableView)
+    }
 
     /// Determines if the row at the specified index path should also become selected when focus moves to it.
     /// If the table view's global selectionFollowsFocus is enabled, this method will allow you to override that behavior on a per-index path basis. This method is not called if selectionFollowsFocus is disabled.
     @available(iOS 15.0, *)
-    internal func tableView(_ tableView: UITableView, selectionFollowsFocusForRowAt indexPath: IndexPath) -> Bool
+    internal func tableView(_ tableView: UITableView, selectionFollowsFocusForRowAt indexPath: IndexPath) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, selectionFollowsFocusForRowAt: indexPath) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS 11.0, *)
-    internal func tableView(_ tableView: UITableView, shouldSpringLoadRowAt indexPath: IndexPath, with context: any UISpringLoadedInteractionContext) -> Bool
+    internal func tableView(_ tableView: UITableView, shouldSpringLoadRowAt indexPath: IndexPath, with context: any UISpringLoadedInteractionContext) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, shouldSpringLoadRowAt: indexPath, with: context) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS 13.0, *)
-    internal func tableView(_ tableView: UITableView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool
+    internal func tableView(_ tableView: UITableView, shouldBeginMultipleSelectionInteractionAt indexPath: IndexPath) -> Bool {
+        guard let flag = delegate?.tableView?(tableView, shouldBeginMultipleSelectionInteractionAt: indexPath) else {
+            return false
+        }
+        return flag
+    }
 
     @available(iOS 13.0, *)
-    internal func tableView(_ tableView: UITableView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath)
+    internal func tableView(_ tableView: UITableView, didBeginMultipleSelectionInteractionAt indexPath: IndexPath) {
+        delegate?.tableView?(tableView, didBeginMultipleSelectionInteractionAt: indexPath)
+    }
 
     @available(iOS 13.0, *)
-    internal func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView)
+    internal func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableView) {
+        delegate?.tableViewDidEndMultipleSelectionInteraction?(tableView)
+    }
 
     /**
      * @abstract Called when the interaction begins.
@@ -588,7 +654,9 @@ internal class ZTableViewController: ZTableViewDelegate {
      *         present at this particular time.
      */
     @available(iOS 13.0, *)
-    internal func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration?
+    internal func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
+        return delegate?.tableView?(tableView, contextMenuConfigurationForRowAt: indexPath, point: point)
+    }
 
     /**
      * @abstract Called when the interaction begins. Return a UITargetedPreview to override the default preview created by the table view.
@@ -597,7 +665,9 @@ internal class ZTableViewController: ZTableViewDelegate {
      * @param configuration  The configuration of the menu about to be displayed by this interaction.
      */
     @available(iOS 13.0, *)
-    internal func tableView(_ tableView: UITableView, previewForHighlightingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview?
+    internal func tableView(_ tableView: UITableView, previewForHighlightingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview? {
+        return delegate?.tableView?(tableView, previewForHighlightingContextMenuWithConfiguration: configuration)
+    }
 
     /**
      * @abstract Called when the interaction is about to dismiss. Return a UITargetedPreview describing the desired dismissal target.
@@ -607,7 +677,9 @@ internal class ZTableViewController: ZTableViewDelegate {
      * @param configuration  The configuration of the menu displayed by this interaction.
      */
     @available(iOS 13.0, *)
-    internal func tableView(_ tableView: UITableView, previewForDismissingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview?
+    internal func tableView(_ tableView: UITableView, previewForDismissingContextMenuWithConfiguration configuration: UIContextMenuConfiguration) -> UITargetedPreview? {
+        return delegate?.tableView?(tableView, previewForDismissingContextMenuWithConfiguration: configuration)
+    }
 
     /**
      * @abstract Called when the interaction is about to "commit" in response to the user tapping the preview.
@@ -617,7 +689,9 @@ internal class ZTableViewController: ZTableViewDelegate {
      * @param animator       Commit animator. Add animations to this object to run them alongside the commit transition.
      */
     @available(iOS 13.0, *)
-    internal func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating)
+    internal func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating) {
+        delegate?.tableView?(tableView, willPerformPreviewActionForMenuWith: configuration, animator: animator)
+    }
 
     /**
      * @abstract Called when the table view is about to display a menu.
@@ -627,7 +701,9 @@ internal class ZTableViewController: ZTableViewDelegate {
      * @param animator        Appearance animator. Add animations to run them alongside the appearance transition.
      */
     @available(iOS 14.0, *)
-    internal func tableView(_ tableView: UITableView, willDisplayContextMenu configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
+    internal func tableView(_ tableView: UITableView, willDisplayContextMenu configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?) {
+        delegate?.tableView?(tableView, willDisplayContextMenu: configuration, animator: animator)
+    }
 
     /**
      * @abstract Called when the table view's context menu interaction is about to end.
@@ -637,7 +713,9 @@ internal class ZTableViewController: ZTableViewDelegate {
      * @param animator        Disappearance animator. Add animations to run them alongside the disappearance transition.
      */
     @available(iOS 14.0, *)
-    internal func tableView(_ tableView: UITableView, willEndContextMenuInteraction configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?)
+    internal func tableView(_ tableView: UITableView, willEndContextMenuInteraction configuration: UIContextMenuConfiguration, animator: (any UIContextMenuInteractionAnimating)?) {
+        delegate?.tableView?(tableView, willEndContextMenuInteraction: configuration, animator: animator)
+    }
     
     
     func tableView(_ tableView: UITableView, performDropWith coordinator: any UITableViewDropCoordinator) {
