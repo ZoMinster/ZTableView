@@ -15,6 +15,7 @@ internal class ZTableViewController: NSObject, ZTableViewDelegate {
     weak var delegate: ZTableViewDelegate?
     weak var tableView: ZTableView?
     var hasSectionHeader: Bool = false
+    var parentNodeDic = [String:ZTableViewNodeProtocol]()
     var datas: [ZTableViewNodeProtocol] = [] {
         didSet {
             self.solveDatas()
@@ -29,7 +30,6 @@ internal class ZTableViewController: NSObject, ZTableViewDelegate {
             return
         }
         hasSectionHeader = datas.first!.isSectionHeader
-        var parentDic = [String:ZTableViewNodeProtocol]()
         var zdatas: [ZTableViewNodeProtocol] = []
         zdatas += datas
         var firstLevelIndex = 0
@@ -41,7 +41,7 @@ internal class ZTableViewController: NSObject, ZTableViewDelegate {
                 firstLevelIndex += 1
                 node.key = "\(node.index)"
             }
-            var parent = parentDic[node.key]
+            var parent = parentNodeDic[node.key]
             if parent == nil {
                 node.depth = 0
             } else {
@@ -55,7 +55,7 @@ internal class ZTableViewController: NSObject, ZTableViewDelegate {
                 subNode.index = index
                 index += 1
                 subNode.key = "\(node.key).\(subNode.index)"
-                parentDic[subNode.key] = node
+                parentNodeDic[subNode.key] = node
                 zdatas.append(subNode)
             }
         }
