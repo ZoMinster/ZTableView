@@ -14,14 +14,14 @@
 		862C34AE2BF6658400A353E5 /* ZTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 862C34A02BF6658300A353E5 /* ZTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		862C34B92BFA531A00A353E5 /* ZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34B82BFA531A00A353E5 /* ZTableViewCell.swift */; };
 		862C34BB2BFA532E00A353E5 /* ZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34BA2BFA532E00A353E5 /* ZTableView.swift */; };
-		862C34C32BFA537300A353E5 /* ZTableViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34C22BFA537300A353E5 /* ZTableViewDemoApp.swift */; };
-		862C34C52BFA537300A353E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34C42BFA537300A353E5 /* ContentView.swift */; };
-		862C34C72BFA537500A353E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862C34C62BFA537500A353E5 /* Assets.xcassets */; };
-		862C34CB2BFA537500A353E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862C34CA2BFA537500A353E5 /* Preview Assets.xcassets */; };
-		862C34D52BFA537600A353E5 /* ZTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34D42BFA537600A353E5 /* ZTableViewDemoTests.swift */; };
-		862C34DF2BFA537600A353E5 /* ZTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34DE2BFA537600A353E5 /* ZTableViewDemoUITests.swift */; };
-		862C34E12BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34E02BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift */; };
 		862C34F02BFA551100A353E5 /* ZTableViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */; };
+		864B9C612C062F3D0038FAC6 /* ZTableViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C602C062F3D0038FAC6 /* ZTableViewDemoApp.swift */; };
+		864B9C632C062F3D0038FAC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C622C062F3D0038FAC6 /* ContentView.swift */; };
+		864B9C652C062F3F0038FAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B9C642C062F3F0038FAC6 /* Assets.xcassets */; };
+		864B9C692C062F3F0038FAC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B9C682C062F3F0038FAC6 /* Preview Assets.xcassets */; };
+		864B9C732C062F400038FAC6 /* ZTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C722C062F400038FAC6 /* ZTableViewDemoTests.swift */; };
+		864B9C7D2C062F400038FAC6 /* ZTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C7C2C062F400038FAC6 /* ZTableViewDemoUITests.swift */; };
+		864B9C7F2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C7E2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift */; };
 		86825DB52BFCF3260090FC20 /* ZTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86825DB42BFCF3260090FC20 /* ZTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,18 +33,18 @@
 			remoteGlobalIDString = 862C349C2BF6658300A353E5;
 			remoteInfo = ZTableView;
 		};
-		862C34D12BFA537600A353E5 /* PBXContainerItemProxy */ = {
+		864B9C6F2C062F400038FAC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 862C34942BF6658300A353E5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 862C34BF2BFA537300A353E5;
+			remoteGlobalIDString = 864B9C5D2C062F3D0038FAC6;
 			remoteInfo = ZTableViewDemo;
 		};
-		862C34DB2BFA537600A353E5 /* PBXContainerItemProxy */ = {
+		864B9C792C062F400038FAC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 862C34942BF6658300A353E5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 862C34BF2BFA537300A353E5;
+			remoteGlobalIDString = 864B9C5D2C062F3D0038FAC6;
 			remoteInfo = ZTableViewDemo;
 		};
 /* End PBXContainerItemProxy section */
@@ -58,18 +58,18 @@
 		862C34AC2BF6658400A353E5 /* ZTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewTests.swift; sourceTree = "<group>"; };
 		862C34B82BFA531A00A353E5 /* ZTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewCell.swift; sourceTree = "<group>"; };
 		862C34BA2BFA532E00A353E5 /* ZTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableView.swift; sourceTree = "<group>"; };
-		862C34C02BFA537300A353E5 /* ZTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		862C34C22BFA537300A353E5 /* ZTableViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoApp.swift; sourceTree = "<group>"; };
-		862C34C42BFA537300A353E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		862C34C62BFA537500A353E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		862C34C82BFA537500A353E5 /* ZTableViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZTableViewDemo.entitlements; sourceTree = "<group>"; };
-		862C34CA2BFA537500A353E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		862C34D02BFA537600A353E5 /* ZTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		862C34D42BFA537600A353E5 /* ZTableViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoTests.swift; sourceTree = "<group>"; };
-		862C34DA2BFA537600A353E5 /* ZTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		862C34DE2BFA537600A353E5 /* ZTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITests.swift; sourceTree = "<group>"; };
-		862C34E02BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewNode.swift; sourceTree = "<group>"; };
+		864B9C5E2C062F3D0038FAC6 /* ZTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		864B9C602C062F3D0038FAC6 /* ZTableViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoApp.swift; sourceTree = "<group>"; };
+		864B9C622C062F3D0038FAC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		864B9C642C062F3F0038FAC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		864B9C662C062F3F0038FAC6 /* ZTableViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZTableViewDemo.entitlements; sourceTree = "<group>"; };
+		864B9C682C062F3F0038FAC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		864B9C6E2C062F400038FAC6 /* ZTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		864B9C722C062F400038FAC6 /* ZTableViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoTests.swift; sourceTree = "<group>"; };
+		864B9C782C062F400038FAC6 /* ZTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		864B9C7C2C062F400038FAC6 /* ZTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITests.swift; sourceTree = "<group>"; };
+		864B9C7E2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		86825DB42BFCF3260090FC20 /* ZTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,21 +89,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34BD2BFA537300A353E5 /* Frameworks */ = {
+		864B9C5B2C062F3D0038FAC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34CD2BFA537600A353E5 /* Frameworks */ = {
+		864B9C6B2C062F400038FAC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34D72BFA537600A353E5 /* Frameworks */ = {
+		864B9C752C062F400038FAC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,9 +130,9 @@
 				862C34EB2BFA543E00A353E5 /* Model */,
 				862C349F2BF6658300A353E5 /* ZTableView */,
 				862C34AB2BF6658400A353E5 /* ZTableViewTests */,
-				862C34C12BFA537300A353E5 /* ZTableViewDemo */,
-				862C34D32BFA537600A353E5 /* ZTableViewDemoTests */,
-				862C34DD2BFA537600A353E5 /* ZTableViewDemoUITests */,
+				864B9C5F2C062F3D0038FAC6 /* ZTableViewDemo */,
+				864B9C712C062F400038FAC6 /* ZTableViewDemoTests */,
+				864B9C7B2C062F400038FAC6 /* ZTableViewDemoUITests */,
 				862C349E2BF6658300A353E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,9 +142,9 @@
 			children = (
 				862C349D2BF6658300A353E5 /* ZTableView.framework */,
 				862C34A72BF6658400A353E5 /* ZTableViewTests.xctest */,
-				862C34C02BFA537300A353E5 /* ZTableViewDemo.app */,
-				862C34D02BFA537600A353E5 /* ZTableViewDemoTests.xctest */,
-				862C34DA2BFA537600A353E5 /* ZTableViewDemoUITests.xctest */,
+				864B9C5E2C062F3D0038FAC6 /* ZTableViewDemo.app */,
+				864B9C6E2C062F400038FAC6 /* ZTableViewDemoTests.xctest */,
+				864B9C782C062F400038FAC6 /* ZTableViewDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,43 +166,6 @@
 			path = ZTableViewTests;
 			sourceTree = "<group>";
 		};
-		862C34C12BFA537300A353E5 /* ZTableViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-				862C34C22BFA537300A353E5 /* ZTableViewDemoApp.swift */,
-				862C34C42BFA537300A353E5 /* ContentView.swift */,
-				862C34C62BFA537500A353E5 /* Assets.xcassets */,
-				862C34C82BFA537500A353E5 /* ZTableViewDemo.entitlements */,
-				862C34C92BFA537500A353E5 /* Preview Content */,
-			);
-			path = ZTableViewDemo;
-			sourceTree = "<group>";
-		};
-		862C34C92BFA537500A353E5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				862C34CA2BFA537500A353E5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		862C34D32BFA537600A353E5 /* ZTableViewDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				862C34D42BFA537600A353E5 /* ZTableViewDemoTests.swift */,
-			);
-			path = ZTableViewDemoTests;
-			sourceTree = "<group>";
-		};
-		862C34DD2BFA537600A353E5 /* ZTableViewDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				862C34DE2BFA537600A353E5 /* ZTableViewDemoUITests.swift */,
-				862C34E02BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift */,
-			);
-			path = ZTableViewDemoUITests;
-			sourceTree = "<group>";
-		};
 		862C34EB2BFA543E00A353E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +181,43 @@
 				862C34BA2BFA532E00A353E5 /* ZTableView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		864B9C5F2C062F3D0038FAC6 /* ZTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				864B9C602C062F3D0038FAC6 /* ZTableViewDemoApp.swift */,
+				864B9C622C062F3D0038FAC6 /* ContentView.swift */,
+				864B9C642C062F3F0038FAC6 /* Assets.xcassets */,
+				864B9C662C062F3F0038FAC6 /* ZTableViewDemo.entitlements */,
+				864B9C672C062F3F0038FAC6 /* Preview Content */,
+			);
+			path = ZTableViewDemo;
+			sourceTree = "<group>";
+		};
+		864B9C672C062F3F0038FAC6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				864B9C682C062F3F0038FAC6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		864B9C712C062F400038FAC6 /* ZTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				864B9C722C062F400038FAC6 /* ZTableViewDemoTests.swift */,
+			);
+			path = ZTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		864B9C7B2C062F400038FAC6 /* ZTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				864B9C7C2C062F400038FAC6 /* ZTableViewDemoUITests.swift */,
+				864B9C7E2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift */,
+			);
+			path = ZTableViewDemoUITests;
 			sourceTree = "<group>";
 		};
 		86825DB32BFCF3060090FC20 /* Controller */ = {
@@ -278,13 +278,13 @@
 			productReference = 862C34A72BF6658400A353E5 /* ZTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		862C34BF2BFA537300A353E5 /* ZTableViewDemo */ = {
+		864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 862C34E22BFA537600A353E5 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */;
+			buildConfigurationList = 864B9C802C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */;
 			buildPhases = (
-				862C34BC2BFA537300A353E5 /* Sources */,
-				862C34BD2BFA537300A353E5 /* Frameworks */,
-				862C34BE2BFA537300A353E5 /* Resources */,
+				864B9C5A2C062F3D0038FAC6 /* Sources */,
+				864B9C5B2C062F3D0038FAC6 /* Frameworks */,
+				864B9C5C2C062F3D0038FAC6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -292,43 +292,43 @@
 			);
 			name = ZTableViewDemo;
 			productName = ZTableViewDemo;
-			productReference = 862C34C02BFA537300A353E5 /* ZTableViewDemo.app */;
+			productReference = 864B9C5E2C062F3D0038FAC6 /* ZTableViewDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		862C34CF2BFA537600A353E5 /* ZTableViewDemoTests */ = {
+		864B9C6D2C062F400038FAC6 /* ZTableViewDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 862C34E52BFA537600A353E5 /* Build configuration list for PBXNativeTarget "ZTableViewDemoTests" */;
+			buildConfigurationList = 864B9C832C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoTests" */;
 			buildPhases = (
-				862C34CC2BFA537600A353E5 /* Sources */,
-				862C34CD2BFA537600A353E5 /* Frameworks */,
-				862C34CE2BFA537600A353E5 /* Resources */,
+				864B9C6A2C062F400038FAC6 /* Sources */,
+				864B9C6B2C062F400038FAC6 /* Frameworks */,
+				864B9C6C2C062F400038FAC6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				862C34D22BFA537600A353E5 /* PBXTargetDependency */,
+				864B9C702C062F400038FAC6 /* PBXTargetDependency */,
 			);
 			name = ZTableViewDemoTests;
 			productName = ZTableViewDemoTests;
-			productReference = 862C34D02BFA537600A353E5 /* ZTableViewDemoTests.xctest */;
+			productReference = 864B9C6E2C062F400038FAC6 /* ZTableViewDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		862C34D92BFA537600A353E5 /* ZTableViewDemoUITests */ = {
+		864B9C772C062F400038FAC6 /* ZTableViewDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 862C34E82BFA537600A353E5 /* Build configuration list for PBXNativeTarget "ZTableViewDemoUITests" */;
+			buildConfigurationList = 864B9C862C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoUITests" */;
 			buildPhases = (
-				862C34D62BFA537600A353E5 /* Sources */,
-				862C34D72BFA537600A353E5 /* Frameworks */,
-				862C34D82BFA537600A353E5 /* Resources */,
+				864B9C742C062F400038FAC6 /* Sources */,
+				864B9C752C062F400038FAC6 /* Frameworks */,
+				864B9C762C062F400038FAC6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				862C34DC2BFA537600A353E5 /* PBXTargetDependency */,
+				864B9C7A2C062F400038FAC6 /* PBXTargetDependency */,
 			);
 			name = ZTableViewDemoUITests;
 			productName = ZTableViewDemoUITests;
-			productReference = 862C34DA2BFA537600A353E5 /* ZTableViewDemoUITests.xctest */;
+			productReference = 864B9C782C062F400038FAC6 /* ZTableViewDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -347,16 +347,16 @@
 					862C34A62BF6658400A353E5 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					862C34BF2BFA537300A353E5 = {
+					864B9C5D2C062F3D0038FAC6 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					862C34CF2BFA537600A353E5 = {
+					864B9C6D2C062F400038FAC6 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 862C34BF2BFA537300A353E5;
+						TestTargetID = 864B9C5D2C062F3D0038FAC6;
 					};
-					862C34D92BFA537600A353E5 = {
+					864B9C772C062F400038FAC6 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 862C34BF2BFA537300A353E5;
+						TestTargetID = 864B9C5D2C062F3D0038FAC6;
 					};
 				};
 			};
@@ -375,9 +375,9 @@
 			targets = (
 				862C349C2BF6658300A353E5 /* ZTableView */,
 				862C34A62BF6658400A353E5 /* ZTableViewTests */,
-				862C34BF2BFA537300A353E5 /* ZTableViewDemo */,
-				862C34CF2BFA537600A353E5 /* ZTableViewDemoTests */,
-				862C34D92BFA537600A353E5 /* ZTableViewDemoUITests */,
+				864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */,
+				864B9C6D2C062F400038FAC6 /* ZTableViewDemoTests */,
+				864B9C772C062F400038FAC6 /* ZTableViewDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,23 +397,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34BE2BFA537300A353E5 /* Resources */ = {
+		864B9C5C2C062F3D0038FAC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862C34CB2BFA537500A353E5 /* Preview Assets.xcassets in Resources */,
-				862C34C72BFA537500A353E5 /* Assets.xcassets in Resources */,
+				864B9C692C062F3F0038FAC6 /* Preview Assets.xcassets in Resources */,
+				864B9C652C062F3F0038FAC6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34CE2BFA537600A353E5 /* Resources */ = {
+		864B9C6C2C062F400038FAC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34D82BFA537600A353E5 /* Resources */ = {
+		864B9C762C062F400038FAC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -444,29 +444,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34BC2BFA537300A353E5 /* Sources */ = {
+		864B9C5A2C062F3D0038FAC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862C34C52BFA537300A353E5 /* ContentView.swift in Sources */,
-				862C34C32BFA537300A353E5 /* ZTableViewDemoApp.swift in Sources */,
+				864B9C632C062F3D0038FAC6 /* ContentView.swift in Sources */,
+				864B9C612C062F3D0038FAC6 /* ZTableViewDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34CC2BFA537600A353E5 /* Sources */ = {
+		864B9C6A2C062F400038FAC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862C34D52BFA537600A353E5 /* ZTableViewDemoTests.swift in Sources */,
+				864B9C732C062F400038FAC6 /* ZTableViewDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		862C34D62BFA537600A353E5 /* Sources */ = {
+		864B9C742C062F400038FAC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862C34E12BFA537600A353E5 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */,
-				862C34DF2BFA537600A353E5 /* ZTableViewDemoUITests.swift in Sources */,
+				864B9C7F2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */,
+				864B9C7D2C062F400038FAC6 /* ZTableViewDemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,15 +478,15 @@
 			target = 862C349C2BF6658300A353E5 /* ZTableView */;
 			targetProxy = 862C34A92BF6658400A353E5 /* PBXContainerItemProxy */;
 		};
-		862C34D22BFA537600A353E5 /* PBXTargetDependency */ = {
+		864B9C702C062F400038FAC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 862C34BF2BFA537300A353E5 /* ZTableViewDemo */;
-			targetProxy = 862C34D12BFA537600A353E5 /* PBXContainerItemProxy */;
+			target = 864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */;
+			targetProxy = 864B9C6F2C062F400038FAC6 /* PBXContainerItemProxy */;
 		};
-		862C34DC2BFA537600A353E5 /* PBXTargetDependency */ = {
+		864B9C7A2C062F400038FAC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 862C34BF2BFA537300A353E5 /* ZTableViewDemo */;
-			targetProxy = 862C34DB2BFA537600A353E5 /* PBXContainerItemProxy */;
+			target = 864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */;
+			targetProxy = 864B9C792C062F400038FAC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -716,7 +716,7 @@
 			};
 			name = Release;
 		};
-		862C34E32BFA537600A353E5 /* Debug */ = {
+		864B9C812C062F400038FAC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -754,7 +754,7 @@
 			};
 			name = Debug;
 		};
-		862C34E42BFA537600A353E5 /* Release */ = {
+		864B9C822C062F400038FAC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -792,7 +792,7 @@
 			};
 			name = Release;
 		};
-		862C34E62BFA537600A353E5 /* Debug */ = {
+		864B9C842C062F400038FAC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -815,7 +815,7 @@
 			};
 			name = Debug;
 		};
-		862C34E72BFA537600A353E5 /* Release */ = {
+		864B9C852C062F400038FAC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -838,7 +838,7 @@
 			};
 			name = Release;
 		};
-		862C34E92BFA537600A353E5 /* Debug */ = {
+		864B9C872C062F400038FAC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -860,7 +860,7 @@
 			};
 			name = Debug;
 		};
-		862C34EA2BFA537600A353E5 /* Release */ = {
+		864B9C882C062F400038FAC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -912,29 +912,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		862C34E22BFA537600A353E5 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */ = {
+		864B9C802C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				862C34E32BFA537600A353E5 /* Debug */,
-				862C34E42BFA537600A353E5 /* Release */,
+				864B9C812C062F400038FAC6 /* Debug */,
+				864B9C822C062F400038FAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		862C34E52BFA537600A353E5 /* Build configuration list for PBXNativeTarget "ZTableViewDemoTests" */ = {
+		864B9C832C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				862C34E62BFA537600A353E5 /* Debug */,
-				862C34E72BFA537600A353E5 /* Release */,
+				864B9C842C062F400038FAC6 /* Debug */,
+				864B9C852C062F400038FAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		862C34E82BFA537600A353E5 /* Build configuration list for PBXNativeTarget "ZTableViewDemoUITests" */ = {
+		864B9C862C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				862C34E92BFA537600A353E5 /* Debug */,
-				862C34EA2BFA537600A353E5 /* Release */,
+				864B9C872C062F400038FAC6 /* Debug */,
+				864B9C882C062F400038FAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
