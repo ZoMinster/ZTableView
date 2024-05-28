@@ -41,5 +41,6 @@ open class ZTableView: UITableView, UITableViewDelegate {
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         controller.tableView = self
+        self.register(ZTableViewCell.self, forCellReuseIdentifier: zCellID)
     }
 }
