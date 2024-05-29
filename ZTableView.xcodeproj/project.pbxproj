@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701699F02C0725C800F7FAF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701699EF2C0725C800F7FAF1 /* AppDelegate.swift */; };
+		701699F22C0725C800F7FAF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701699F12C0725C800F7FAF1 /* SceneDelegate.swift */; };
+		701699F42C0725C800F7FAF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701699F32C0725C800F7FAF1 /* ViewController.swift */; };
+		701699F72C0725C800F7FAF1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 701699F62C0725C800F7FAF1 /* Base */; };
+		701699F92C0725C900F7FAF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 701699F82C0725C900F7FAF1 /* Assets.xcassets */; };
+		701699FC2C0725C900F7FAF1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 701699FB2C0725C900F7FAF1 /* Base */; };
 		86269E322BFCEA8300B4E4AA /* ZTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86269E312BFCEA8300B4E4AA /* ZTableViewDelegate.swift */; };
 		862C34A22BF6658300A353E5 /* ZTableView.docc in Sources */ = {isa = PBXBuildFile; fileRef = 862C34A12BF6658300A353E5 /* ZTableView.docc */; };
 		862C34A82BF6658400A353E5 /* ZTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862C349D2BF6658300A353E5 /* ZTableView.framework */; };
@@ -15,13 +21,6 @@
 		862C34B92BFA531A00A353E5 /* ZTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34B82BFA531A00A353E5 /* ZTableViewCell.swift */; };
 		862C34BB2BFA532E00A353E5 /* ZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34BA2BFA532E00A353E5 /* ZTableView.swift */; };
 		862C34F02BFA551100A353E5 /* ZTableViewNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */; };
-		864B9C612C062F3D0038FAC6 /* ZTableViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C602C062F3D0038FAC6 /* ZTableViewDemoApp.swift */; };
-		864B9C632C062F3D0038FAC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C622C062F3D0038FAC6 /* ContentView.swift */; };
-		864B9C652C062F3F0038FAC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B9C642C062F3F0038FAC6 /* Assets.xcassets */; };
-		864B9C692C062F3F0038FAC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864B9C682C062F3F0038FAC6 /* Preview Assets.xcassets */; };
-		864B9C732C062F400038FAC6 /* ZTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C722C062F400038FAC6 /* ZTableViewDemoTests.swift */; };
-		864B9C7D2C062F400038FAC6 /* ZTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C7C2C062F400038FAC6 /* ZTableViewDemoUITests.swift */; };
-		864B9C7F2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B9C7E2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift */; };
 		86825DB52BFCF3260090FC20 /* ZTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86825DB42BFCF3260090FC20 /* ZTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,23 +32,17 @@
 			remoteGlobalIDString = 862C349C2BF6658300A353E5;
 			remoteInfo = ZTableView;
 		};
-		864B9C6F2C062F400038FAC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 862C34942BF6658300A353E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 864B9C5D2C062F3D0038FAC6;
-			remoteInfo = ZTableViewDemo;
-		};
-		864B9C792C062F400038FAC6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 862C34942BF6658300A353E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 864B9C5D2C062F3D0038FAC6;
-			remoteInfo = ZTableViewDemo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701699ED2C0725C800F7FAF1 /* ZTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		701699EF2C0725C800F7FAF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		701699F12C0725C800F7FAF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		701699F32C0725C800F7FAF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		701699F62C0725C800F7FAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		701699F82C0725C900F7FAF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		701699FB2C0725C900F7FAF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		701699FD2C0725C900F7FAF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86269E312BFCEA8300B4E4AA /* ZTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDelegate.swift; sourceTree = "<group>"; };
 		862C349D2BF6658300A353E5 /* ZTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		862C34A02BF6658300A353E5 /* ZTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTableView.h; sourceTree = "<group>"; };
@@ -59,21 +52,17 @@
 		862C34B82BFA531A00A353E5 /* ZTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewCell.swift; sourceTree = "<group>"; };
 		862C34BA2BFA532E00A353E5 /* ZTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableView.swift; sourceTree = "<group>"; };
 		862C34EF2BFA551100A353E5 /* ZTableViewNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewNode.swift; sourceTree = "<group>"; };
-		864B9C5E2C062F3D0038FAC6 /* ZTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		864B9C602C062F3D0038FAC6 /* ZTableViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoApp.swift; sourceTree = "<group>"; };
-		864B9C622C062F3D0038FAC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		864B9C642C062F3F0038FAC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		864B9C662C062F3F0038FAC6 /* ZTableViewDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZTableViewDemo.entitlements; sourceTree = "<group>"; };
-		864B9C682C062F3F0038FAC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		864B9C6E2C062F400038FAC6 /* ZTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		864B9C722C062F400038FAC6 /* ZTableViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoTests.swift; sourceTree = "<group>"; };
-		864B9C782C062F400038FAC6 /* ZTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		864B9C7C2C062F400038FAC6 /* ZTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITests.swift; sourceTree = "<group>"; };
-		864B9C7E2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		86825DB42BFCF3260090FC20 /* ZTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		701699EA2C0725C800F7FAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		862C349A2BF6658300A353E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,30 +78,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		864B9C5B2C062F3D0038FAC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		864B9C6B2C062F400038FAC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		864B9C752C062F400038FAC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		701699EE2C0725C800F7FAF1 /* ZTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				701699EF2C0725C800F7FAF1 /* AppDelegate.swift */,
+				701699F12C0725C800F7FAF1 /* SceneDelegate.swift */,
+				701699F32C0725C800F7FAF1 /* ViewController.swift */,
+				701699F52C0725C800F7FAF1 /* Main.storyboard */,
+				701699F82C0725C900F7FAF1 /* Assets.xcassets */,
+				701699FA2C0725C900F7FAF1 /* LaunchScreen.storyboard */,
+				701699FD2C0725C900F7FAF1 /* Info.plist */,
+			);
+			path = ZTableViewDemo;
+			sourceTree = "<group>";
+		};
 		86269E302BFCEA3400B4E4AA /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,9 +112,7 @@
 				862C34EB2BFA543E00A353E5 /* Model */,
 				862C349F2BF6658300A353E5 /* ZTableView */,
 				862C34AB2BF6658400A353E5 /* ZTableViewTests */,
-				864B9C5F2C062F3D0038FAC6 /* ZTableViewDemo */,
-				864B9C712C062F400038FAC6 /* ZTableViewDemoTests */,
-				864B9C7B2C062F400038FAC6 /* ZTableViewDemoUITests */,
+				701699EE2C0725C800F7FAF1 /* ZTableViewDemo */,
 				862C349E2BF6658300A353E5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -142,9 +122,7 @@
 			children = (
 				862C349D2BF6658300A353E5 /* ZTableView.framework */,
 				862C34A72BF6658400A353E5 /* ZTableViewTests.xctest */,
-				864B9C5E2C062F3D0038FAC6 /* ZTableViewDemo.app */,
-				864B9C6E2C062F400038FAC6 /* ZTableViewDemoTests.xctest */,
-				864B9C782C062F400038FAC6 /* ZTableViewDemoUITests.xctest */,
+				701699ED2C0725C800F7FAF1 /* ZTableViewDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,43 +161,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		864B9C5F2C062F3D0038FAC6 /* ZTableViewDemo */ = {
-			isa = PBXGroup;
-			children = (
-				864B9C602C062F3D0038FAC6 /* ZTableViewDemoApp.swift */,
-				864B9C622C062F3D0038FAC6 /* ContentView.swift */,
-				864B9C642C062F3F0038FAC6 /* Assets.xcassets */,
-				864B9C662C062F3F0038FAC6 /* ZTableViewDemo.entitlements */,
-				864B9C672C062F3F0038FAC6 /* Preview Content */,
-			);
-			path = ZTableViewDemo;
-			sourceTree = "<group>";
-		};
-		864B9C672C062F3F0038FAC6 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				864B9C682C062F3F0038FAC6 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		864B9C712C062F400038FAC6 /* ZTableViewDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				864B9C722C062F400038FAC6 /* ZTableViewDemoTests.swift */,
-			);
-			path = ZTableViewDemoTests;
-			sourceTree = "<group>";
-		};
-		864B9C7B2C062F400038FAC6 /* ZTableViewDemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				864B9C7C2C062F400038FAC6 /* ZTableViewDemoUITests.swift */,
-				864B9C7E2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift */,
-			);
-			path = ZTableViewDemoUITests;
-			sourceTree = "<group>";
-		};
 		86825DB32BFCF3060090FC20 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +183,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		701699EC2C0725C800F7FAF1 /* ZTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 701699FE2C0725C900F7FAF1 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */;
+			buildPhases = (
+				701699E92C0725C800F7FAF1 /* Sources */,
+				701699EA2C0725C800F7FAF1 /* Frameworks */,
+				701699EB2C0725C800F7FAF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZTableViewDemo;
+			productName = ZTableViewDemo;
+			productReference = 701699ED2C0725C800F7FAF1 /* ZTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		862C349C2BF6658300A353E5 /* ZTableView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 862C34B12BF6658400A353E5 /* Build configuration list for PBXNativeTarget "ZTableView" */;
@@ -278,59 +236,6 @@
 			productReference = 862C34A72BF6658400A353E5 /* ZTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 864B9C802C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */;
-			buildPhases = (
-				864B9C5A2C062F3D0038FAC6 /* Sources */,
-				864B9C5B2C062F3D0038FAC6 /* Frameworks */,
-				864B9C5C2C062F3D0038FAC6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ZTableViewDemo;
-			productName = ZTableViewDemo;
-			productReference = 864B9C5E2C062F3D0038FAC6 /* ZTableViewDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		864B9C6D2C062F400038FAC6 /* ZTableViewDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 864B9C832C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoTests" */;
-			buildPhases = (
-				864B9C6A2C062F400038FAC6 /* Sources */,
-				864B9C6B2C062F400038FAC6 /* Frameworks */,
-				864B9C6C2C062F400038FAC6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				864B9C702C062F400038FAC6 /* PBXTargetDependency */,
-			);
-			name = ZTableViewDemoTests;
-			productName = ZTableViewDemoTests;
-			productReference = 864B9C6E2C062F400038FAC6 /* ZTableViewDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		864B9C772C062F400038FAC6 /* ZTableViewDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 864B9C862C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoUITests" */;
-			buildPhases = (
-				864B9C742C062F400038FAC6 /* Sources */,
-				864B9C752C062F400038FAC6 /* Frameworks */,
-				864B9C762C062F400038FAC6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				864B9C7A2C062F400038FAC6 /* PBXTargetDependency */,
-			);
-			name = ZTableViewDemoUITests;
-			productName = ZTableViewDemoUITests;
-			productReference = 864B9C782C062F400038FAC6 /* ZTableViewDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -341,22 +246,14 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					701699EC2C0725C800F7FAF1 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					862C349C2BF6658300A353E5 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 					862C34A62BF6658400A353E5 = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					864B9C5D2C062F3D0038FAC6 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					864B9C6D2C062F400038FAC6 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 864B9C5D2C062F3D0038FAC6;
-					};
-					864B9C772C062F400038FAC6 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 864B9C5D2C062F3D0038FAC6;
 					};
 				};
 			};
@@ -375,14 +272,22 @@
 			targets = (
 				862C349C2BF6658300A353E5 /* ZTableView */,
 				862C34A62BF6658400A353E5 /* ZTableViewTests */,
-				864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */,
-				864B9C6D2C062F400038FAC6 /* ZTableViewDemoTests */,
-				864B9C772C062F400038FAC6 /* ZTableViewDemoUITests */,
+				701699EC2C0725C800F7FAF1 /* ZTableViewDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		701699EB2C0725C800F7FAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701699F92C0725C900F7FAF1 /* Assets.xcassets in Resources */,
+				701699FC2C0725C900F7FAF1 /* Base in Resources */,
+				701699F72C0725C800F7FAF1 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		862C349B2BF6658300A353E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,32 +302,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		864B9C5C2C062F3D0038FAC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				864B9C692C062F3F0038FAC6 /* Preview Assets.xcassets in Resources */,
-				864B9C652C062F3F0038FAC6 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		864B9C6C2C062F400038FAC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		864B9C762C062F400038FAC6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		701699E92C0725C800F7FAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				701699F42C0725C800F7FAF1 /* ViewController.swift in Sources */,
+				701699F02C0725C800F7FAF1 /* AppDelegate.swift in Sources */,
+				701699F22C0725C800F7FAF1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		862C34992BF6658300A353E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,32 +336,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		864B9C5A2C062F3D0038FAC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				864B9C632C062F3D0038FAC6 /* ContentView.swift in Sources */,
-				864B9C612C062F3D0038FAC6 /* ZTableViewDemoApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		864B9C6A2C062F400038FAC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				864B9C732C062F400038FAC6 /* ZTableViewDemoTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		864B9C742C062F400038FAC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				864B9C7F2C062F400038FAC6 /* ZTableViewDemoUITestsLaunchTests.swift in Sources */,
-				864B9C7D2C062F400038FAC6 /* ZTableViewDemoUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -478,19 +344,86 @@
 			target = 862C349C2BF6658300A353E5 /* ZTableView */;
 			targetProxy = 862C34A92BF6658400A353E5 /* PBXContainerItemProxy */;
 		};
-		864B9C702C062F400038FAC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */;
-			targetProxy = 864B9C6F2C062F400038FAC6 /* PBXContainerItemProxy */;
-		};
-		864B9C7A2C062F400038FAC6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 864B9C5D2C062F3D0038FAC6 /* ZTableViewDemo */;
-			targetProxy = 864B9C792C062F400038FAC6 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		701699F52C0725C800F7FAF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701699F62C0725C800F7FAF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		701699FA2C0725C900F7FAF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				701699FB2C0725C900F7FAF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		701699FF2C0725C900F7FAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYFTBH4WLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZTableViewDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70169A002C0725C900F7FAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HYFTBH4WLL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZTableViewDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		862C34AF2BF6658400A353E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -544,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -604,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -631,11 +564,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -646,6 +581,8 @@
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -664,11 +601,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -679,6 +618,8 @@
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -690,6 +631,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HYFTBH4WLL;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,6 +649,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HYFTBH4WLL;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -716,175 +659,18 @@
 			};
 			name = Release;
 		};
-		864B9C812C062F400038FAC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ZTableViewDemo/ZTableViewDemo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ZTableViewDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = HYFTBH4WLL;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		864B9C822C062F400038FAC6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ZTableViewDemo/ZTableViewDemo.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ZTableViewDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = HYFTBH4WLL;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		864B9C842C062F400038FAC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HYFTBH4WLL;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTableViewDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZTableViewDemo";
-			};
-			name = Debug;
-		};
-		864B9C852C062F400038FAC6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HYFTBH4WLL;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZTableViewDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZTableViewDemo";
-			};
-			name = Release;
-		};
-		864B9C872C062F400038FAC6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HYFTBH4WLL;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ZTableViewDemo;
-			};
-			name = Debug;
-		};
-		864B9C882C062F400038FAC6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HYFTBH4WLL;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.z.ZTableViewDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ZTableViewDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		701699FE2C0725C900F7FAF1 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				701699FF2C0725C900F7FAF1 /* Debug */,
+				70169A002C0725C900F7FAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		862C34972BF6658300A353E5 /* Build configuration list for PBXProject "ZTableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -908,33 +694,6 @@
 			buildConfigurations = (
 				862C34B52BF6658400A353E5 /* Debug */,
 				862C34B62BF6658400A353E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		864B9C802C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				864B9C812C062F400038FAC6 /* Debug */,
-				864B9C822C062F400038FAC6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		864B9C832C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				864B9C842C062F400038FAC6 /* Debug */,
-				864B9C852C062F400038FAC6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		864B9C862C062F400038FAC6 /* Build configuration list for PBXNativeTarget "ZTableViewDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				864B9C872C062F400038FAC6 /* Debug */,
-				864B9C882C062F400038FAC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
